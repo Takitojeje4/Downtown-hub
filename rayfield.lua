@@ -168,3 +168,74 @@ local Button = Tab:CreateButton({
    end,
 })
 
+local Tab = Window:CreateTab("Doors", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection("scripts")
+
+local Button = Tab:CreateButton({
+   Name = "Kick players",
+   Callback = function()
+      kick script game.Players.LocalPlayer.Character.Humanoid.Health = 0
+wait(10)
+game.Players.LocalPlayer:Kick("haha yes")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "scanner tool",
+   Callback = function()
+      scanner tool: _G.scanner_fps = 120
+_G.disable_static = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/Scanner.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Crash servers",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/doors/crasher.luau"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Op item",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/StarJug.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "MS paint GUI",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "gun that turns everything to inky goo",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/seekgun.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Doors creepy version",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/DripCapybara/Doors-Modes/refs/heads/main/CreepyMode/ObfuscatedMain.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Dread spawner",
+   Callback = function()
+      local main_game = require(game:GetService("Players").LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Idk press f9",
+   Callback = function()
+      require(game:GetService("Players").LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.Dread)(main_game)
+      print("require(game:GetService("Players").LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.Dread)(main_game)")
+   end,
+})
