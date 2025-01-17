@@ -100,6 +100,39 @@ local Button = Tab:CreateButton({
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "Project spectrum",
+   Callback = function()
+      loadstring(game:HttpGet("https://you.whimper.xyz/spectrum"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Reaper Hub",
+   Callback = function()
+      loadstring(game:HttpGet("https://you.whimper.xyz/reaperhub"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Syntax Hub",
+   Callback = function()
+      loadstring(game:HttpGet("https://you.whimper.xyz/SyntaxHub"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Blactrap Project",
+   Callback = function()
+      loadstring(game:HttpGet("https://you.whimper.xyz/btproject"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+
 local Tab = Window:CreateTab("Blox fruits", 4483362458) -- Title, Image
 
 local Section = Tab:CreateSection("scripts")
@@ -168,6 +201,13 @@ local Button = Tab:CreateButton({
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "Rybowe Hub",
+   Callback = function()
+      loadstring(game:HttpGet("https://you.whimper.xyz/rybowe"))()
+   end,
+})
+
 local Tab = Window:CreateTab("Doors", 4483362458) -- Title, Image
 
 local Section = Tab:CreateSection("scripts")
@@ -207,3 +247,53 @@ local Button = Tab:CreateButton({
    end,
 })
 
+local Tab = Window:CreateTab("Fling things and pleople", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection("scripts")
+
+local Button = Tab:CreateButton({
+   Name = "VHS",
+   Callback = function()
+      loadstring(game:HttpGet("https://you.whimper.xyz/vhs.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Blitz",
+   Callback = function()
+      loadstring(game:HttpGet("https://you.whimper.xyz/blitz"))()
+   end,
+})
+
+local Tab = Window:CreateTab("Criminality", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection("scripts")
+
+local Button = Tab:CreateButton({
+   Name = "Femboy hub",
+   Callback = function()
+      loadstring(game:HttpGet("https://you.whimper.xyz/FemboysCrimHub"))()
+   end,
+})
+
+local Tab = Window:CreateTab("Fisch", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection("scripts")
+
+local Button = Tab:CreateButton({
+   Name = "Whimper",
+   Callback = function()
+      loadstring(game:HttpGet("https://you.whimper.xyz/hiddenFisch"))()
+   end,
+})
+
+local Tab = Window:CreateTab("King Legacy", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection("scripts")
+
+local Button = Tab:CreateButton({
+   Name = "TC Hub",
+   Callback = function()
+      loadstring(game:HttpGet("https://you.whimper.xyz/tchub"))()
+   end,
+})
