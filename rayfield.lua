@@ -72,6 +72,14 @@ local Button = Tab:CreateButton({
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "Emotes",
+   Callback = function()
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AFEM-14048"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
  local Tab = Window:CreateTab("Hub", 4483362458) -- Title, Image
 
  local Section = Tab:CreateSection("Hubs")
@@ -101,6 +109,62 @@ local Button = Tab:CreateButton({
    Callback = function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
    -- The function that takes place when the button is pressed
+   end,
+})
+
+local Tab = Window:CreateTab("Ragdoll engine", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection("scripts")
+
+local Button = Tab:CreateButton({
+   Name = "System broken",
+   Callback = function()
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Ragdoll-Engine-BEST-SCRIPT-WORKING-SystemBroken-7544"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Tab = Window:CreateTab("Untitled boxing game", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection("scripts")
+
+local Button = Tab:CreateButton({
+   Name = "beanz hub",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/pid4k/scripts/main/untitledboxinggame.lua', true))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Tab = Window:CreateTab("Blue lock rivals", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection("scripts")
+
+local Button = Tab:CreateButton({
+   Name = "whaa hub",
+   Callback = function()
+      --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+game:GetService("StarterGui"):SetCore("SendNotification", {
+   Title = "Whaa hub";
+   Text = "be a normal on Blue Lock: Rivals Script "; 
+   Duration = 10;
+   Button1 = "OK BRO";
+})
+loadstring(game:HttpGet('https://raw.githubusercontent.com/very-very-dump/whaa-hub-beta/refs/heads/main/Blue%20Lock%3A%20Rivals'))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Tab = Window:CreateTab("Rivals", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection("scripts")
+
+local Button = Tab:CreateButton({
+   Name = "Ronix hub",
+   Callback = function()
+      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/51246f83a9c77b825354d5d151c63c50.lua"))()
    end,
 })
 
