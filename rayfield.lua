@@ -225,16 +225,6 @@ local Button = Tab:CreateButton({
    end,
 })
 
-local Button = Tab:CreateButton({
-   Name = "Dread spawner",
-   Callback = function()
-      local main_game = require(game:GetService("Players").LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game)
-   end,
-})
 
-local Button = Tab:CreateButton({
-   Name = "Idk",
-   Callback = function()
-      require(game:GetService("Players").LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.Dread)(main_game)
-   end,
-})
+
+
