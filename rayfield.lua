@@ -80,6 +80,40 @@ local Button = Tab:CreateButton({
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "Script searcher",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/ScriptSearcher"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Infinity yield",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fly v3",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Qrto1/fly/main/universal", true))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fps Counter",
+   Callback = function()
+      loadstring(game:HttpGet("https://pastefy.app/c63s1M4w/raw",true))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+
+
  local Tab = Window:CreateTab("Hub", 4483362458) -- Title, Image
 
  local Section = Tab:CreateSection("Hubs")
@@ -295,5 +329,16 @@ local Button = Tab:CreateButton({
    Name = "TC Hub",
    Callback = function()
       loadstring(game:HttpGet("https://you.whimper.xyz/tchub"))()
+   end,
+})
+
+local Tab = Window:CreateTab("Brookhaven", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection("scripts")
+
+local Button = Tab:CreateButton({
+   Name = "Slowed Hub",
+   Callback = function()
+      loadstring(game:HttpGet("https://you.whimper.xyz/sources/slowed/brookhaven.lua"))()
    end,
 })
